@@ -22,7 +22,7 @@ public class App {
             int lucasnum = LucasNumbers.lucasNumberAns(i);
             long endTime = System.nanoTime();
             long dur = endTime - startTime;
-            System.out.println("The answer is " + lucasnum + " and this index ran for " + dur
+            System.out.println("The answer for n = " + i + " is " + lucasnum + ", this index ran for " + dur
                     + " nanoseconds");
         }
         System.exit(0);
