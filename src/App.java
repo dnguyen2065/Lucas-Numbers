@@ -13,6 +13,10 @@ public class App {
         // his work on fibonacci numbers he was also an artillery
         // officer in the French Army during the Franco-Prussian War of 1870–1871.
 
+        // The order of growth of this algorithm is O(2^n)
+        // The order of growth is the same for my sequence as well as the ratio of
+        // successive calculations being 1.62
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Please input to what index you would like your lucas numbers: ");
         int n = Integer.parseInt(reader.readLine());
