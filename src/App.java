@@ -24,6 +24,14 @@ public class App {
             long dur = endTime - startTime;
             System.out.println("The answer for n = " + i + " is " + lucasnum + ", this index ran for " + dur
                     + " nanoseconds");
+            long nextStartTime = System.nanoTime();
+            int lucasnumNext = LucasNumbers.lucasNumberAns(i + 1);
+            long nextEndTime = System.nanoTime();
+            long nextDur = nextEndTime - nextStartTime;
+            float rosc = (float) Math.round(((float) lucasnumNext / (float) lucasnum) * 100) / 100;
+            float rosct = (float) Math.round(((float) nextDur / (float) dur) * 100) / 100;
+            System.out.println("The ratio of successive calculations is " + rosc);
+            System.out.println("The ratio of successive calculation times is " + rosct + "\n");
         }
         System.exit(0);
 
